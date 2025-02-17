@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: user-service
+
+    kafka:
+      bootstrap-servers: localhost:9092
+      schema-registry-url: localhost:8081
+      allow.auto.create.topics: true
+      auto.register.schemas: true
+      application.id: user-application
+      properties:
+        specific.avro.reader: true
+
+server:
+  port: 8087
+
