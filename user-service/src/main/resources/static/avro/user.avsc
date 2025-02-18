@@ -1,0 +1,28 @@
+{
+  "doc": "Avro Schema for User Object",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int",
+      "docs": "This field acts as userId"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "docs": "This field stores a user name"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "docs": "This field stores a user email"
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "docs": "This field stores a user password"
+    }
+  ],
+  "name": "User",
+  "namespace": "com.kafka.avro",
+  "type": "record"
+}
