@@ -4,10 +4,11 @@ spring:
 
     kafka:
       bootstrap-servers: localhost:9092
-      schema-registry-url: localhost:8081
+      schema-registry-url: http://localhost:8081
       allow.auto.create.topics: true
       auto.register.schemas: true
-      application.id: user-application
+      streams:
+        application.id: user-application
       properties:
         specific.avro.reader: true
 
